@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"
+    />
+    <title>Holo Flap Mobile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud-card">
+        <div class="hud-item">
+          <span class="hud-label">SCORE</span>
+          <span id="score" class="hud-value">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">BEST</span>
+          <span id="best" class="hud-value">0</span>
+        </div>
+      </header>
+
+      <section class="game-shell" aria-label="Flappy Bird 游戏区域">
+        <canvas id="game" width="360" height="640"></canvas>
+
+        <div id="overlay" class="overlay show" role="dialog" aria-live="polite">
+          <h1 class="title">HOLO FLAP</h1>
+          <p class="subtitle">点击 / 触摸屏幕让小团子飞起来</p>
+          <button id="startBtn" class="btn-primary" type="button">开始游戏</button>
+          <p class="tips">Mobile 优化：单手点击即可操作</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
